@@ -1,0 +1,21 @@
+{
+  "nameShort": "VSCodium",
+  "nameLong": "VSCodium",
+  "applicationName": "codium",
+  "dataFolderName": ".vscode-codium",
+  "win32MutexName": "vscode-codium",
+  "licenseName": "MIT",
+  "licenseUrl": "https://raw.githubusercontent.com/VSCodium/vscodium/master/LICENSE.txt",
+  "serverApplicationName": "codium-server",
+  "serverDataFolderName": ".vscode-codium-server",
+  "darwinBundleIdentifier": "com.vscodium",
+  "linuxIconName": "vscodium",
+  "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
+  "downloadUrl": "https://github.com/VSCodium/vscodium/releases",
+  "quality": "stable",
+  "extensions.enabled": {
+    "ms-python.python",
+    "ms-python.vscode-pylance"
+  },
+  "extensions.autoUpdate": false
+}

@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+# dnf5 install -y tmux
 
 # Use a COPR Example:
 #
@@ -21,4 +21,23 @@ dnf5 install -y tmux
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+# systemctl enable podman.socket
+
+# INFO: Universe_lord's modifications
+
+dnf5 install -y tmux python3 python3-pip python3-devel neovim git
+
+tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
+[gitlab.com_paulcarroty_vscodium_repo]
+name=gitlab.com_paulcarroty_vscodium_repo
+baseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+metadata_expire=1h
+EOF
+
+dnf5 install -y codium bat ripgrep zoxide
+
+cp /ctx/vscodium-restrictions.json /usr/share/codium/resources/app/product.json
