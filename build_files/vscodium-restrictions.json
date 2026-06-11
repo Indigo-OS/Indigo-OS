@@ -13,9 +13,9 @@
   "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
   "downloadUrl": "https://github.com/VSCodium/vscodium/releases",
   "quality": "stable",
-  "extensions.enabled": {
-    "ms-python.python",
-    "ms-python.vscode-pylance"
+  "extensions.allowed": {
+    "ms-python.python": true,
+    "ms-python.vscode-pylance": true
   },
   "extensions.autoUpdate": false
 }
