@@ -1,0 +1,4 @@
+# Live ISO configuration - no installer
+[[customizations.filesystem]]
+mountpoint = "/"
+minsize = "10 GiB"

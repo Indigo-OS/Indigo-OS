@@ -17,5 +17,6 @@
     "ms-python.python": true,
     "ms-python.vscode-pylance": true
   },
+  "sharedDataFolderName": ".vscodium-shared",
   "extensions.autoUpdate": false
 }
