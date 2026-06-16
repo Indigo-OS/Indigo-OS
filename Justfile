@@ -317,3 +317,12 @@ format:
     fi
     # Run shfmt on all Bash scripts
     /usr/bin/find . -iname "*.sh" -type f -exec shfmt --write "{}" ';'
+
+
+# Build a LIVE ISO virtual machine image (bootable without installation)
+[group('Build Virtal Machine Image')]
+build-live-iso $target_image=("localhost/" + image_name) $tag=default_tag: && (_build-bib target_image tag "iso" "disk_config/live-iso.toml")
+
+# Rebuild a LIVE ISO virtual machine image
+[group('Build Virtal Machine Image')]
+rebuild-live-iso $target_image=("localhost/" + image_name) $tag=default_tag: && (_rebuild-bib target_image tag "iso" "disk_config/live-iso.toml")
