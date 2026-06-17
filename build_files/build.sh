@@ -2,6 +2,9 @@
 
 set -ouex pipefail
 
+# Copy the contents of system_files/ of the git repo to /
+cp -avf "/ctx/system_files"/. /
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -25,7 +28,7 @@ systemctl enable podman.socket
 
 # INFO: Universe_lord's modifications
 
-dnf5 install -y tmux python3 python3-pip python3-devel neovim git
+dnf5 install -y fish tmux python3 python3-pip python3-devel neovim git bat ripgrep zoxide distrobox
 
 tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
 [gitlab.com_paulcarroty_vscodium_repo]
@@ -38,7 +41,7 @@ gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
 metadata_expire=1h
 EOF
 
-dnf5 install -y codium bat ripgrep zoxide
+dnf5 install -y codium
 
 mkdir -p /etc/vscodium/policies/linux/
 cp /ctx/vscodium-restrictions.json /etc/vscodium/policy.json
