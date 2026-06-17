@@ -40,5 +40,5 @@ EOF
 
 dnf5 install -y codium bat ripgrep zoxide
 
-# mkdir -p /etc/codium/policies/linux/
-cp /ctx/vscodium-restrictions.json /usr/share/codium/resources/app/policies/policy.json
+mkdir -p /etc/vscodium/policies/linux/
+cp /ctx/vscodium-restrictions.json /etc/vscodium/policy.json

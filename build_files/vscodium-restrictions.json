@@ -20,7 +20,10 @@
     "McpGalleryServiceUrl": "",
     "AllowedExtensions": {
       "ms-python.python":true,
-      "ms-python.vscode-pylance":true
+      "ms-python.vscode-pylance":true,
+      "ms-python.debugpy":true,
+      "ms-python.vscode-python-envs":true,
+      "vscodevim.vim":true
     },
     "ExtensionGalleryServiceUrl": "",
     "ChatAgentSandboxAllowAutoApprove": false,

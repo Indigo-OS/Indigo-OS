@@ -9,3 +9,4 @@ The schools may also run a locally hosted forgejo instance and the schools may a
 Currently the project is not production grade yet.\
 And also i don't know how to write forgejo actions and github actions.\
 If anyone know how to convert github actions to forgejo actions.
+pls contact.
