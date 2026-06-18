@@ -28,7 +28,7 @@ systemctl enable podman.socket
 
 # INFO: Universe_lord's modifications
 
-dnf5 install -y fish tmux python3 python3-pip python3-devel neovim git bat ripgrep zoxide distrobox
+dnf5 install -y fish tmux python3 python3-pip python3-devel neovim git bat ripgrep zoxide distrobox chromium
 
 tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
 [gitlab.com_paulcarroty_vscodium_repo]
