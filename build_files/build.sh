@@ -43,5 +43,5 @@ EOF
 
 dnf5 install -y codium
 
-mkdir -p /etc/vscodium/policies/linux/
-cp /ctx/vscodium-restrictions.json /etc/vscodium/policy.json
+# mkdir -p /etc/vscodium/policies/linux/
+# cp /ctx/vscodium-restrictions.json /etc/vscodium/policy.json
