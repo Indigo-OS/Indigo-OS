@@ -43,7 +43,7 @@ EOF
 
 dnf5 install -y codium
 
-flatpak pre-install -y
+flatpak preinstall -y
 
 # mkdir -p /etc/vscodium/policies/linux/
 # cp /ctx/vscodium-restrictions.json /etc/vscodium/policy.json
