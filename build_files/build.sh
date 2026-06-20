@@ -28,7 +28,12 @@ systemctl enable podman.socket
 
 # INFO: Universe_lord's modifications
 
-dnf5 install -y fish tmux python3 python3-pip python3-devel neovim git bat ripgrep zoxide distrobox chromium
+dnf5 install -y \
+    python3 python3-pip python3-devel uv \
+    neovim git bat ripgrep zoxide tmux fish \
+    gwenview kclock filelight kate kcalc kontact okular skanpage\
+    distrobox chromium
+
 
 tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
 [gitlab.com_paulcarroty_vscodium_repo]
@@ -45,5 +50,4 @@ dnf5 install -y codium
 
 flatpak preinstall -y
 
-# mkdir -p /etc/vscodium/policies/linux/
-# cp /ctx/vscodium-restrictions.json /etc/vscodium/policy.json
+
