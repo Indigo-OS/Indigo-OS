@@ -8,7 +8,7 @@
   "shell": "system"
   },
   {
-    "label": "Just Build",
+    "label": "Just Build (Dev)",
     "command": "just build ghcr.io/indigo-os/indigo-os-dev local-rebuild",
     "show_command": true,
     "use_new_terminal": false,
@@ -16,7 +16,7 @@
     "hide": "never"
   },
   {
-    "label": "Just Build-Qcow2",
+    "label": "Just Build-Qcow2 (Dev)",
     "command": "just build-qcow2 ghcr.io/indigo-os/indigo-os-dev local-rebuild",
     "show_command": true,
     "use_new_terminal": false,
@@ -24,7 +24,7 @@
     "hide": "never"
   },
   {
-    "label": "Just Rebuild-Qcow2",
+    "label": "Just Rebuild-Qcow2 (Dev)",
     "command": "just rebuild-qcow2 ghcr.io/indigo-os/indigo-os-dev local-rebuild",
     "show_command": true,
     "use_new_terminal": false,
