@@ -49,5 +49,3 @@ EOF
 dnf5 install -y codium
 
 flatpak preinstall -y
-
-
