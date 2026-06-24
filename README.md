@@ -1,4 +1,5 @@
 # Indigo-OS A Ublue based Linux Distro
+Code name: *Indigofera tinctoria*\
 Indigo os is a linux distro which is made for school environments like Computer labs.
 
 ### What makes Indigo OS Different from other distros:

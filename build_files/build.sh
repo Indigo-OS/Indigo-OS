@@ -29,7 +29,7 @@ systemctl enable podman.socket
 # INFO: Universe_lord's modifications
 
 dnf5 install -y \
-    python3 python3-pip python3-devel uv \
+    python3 python3-pip python3-devel python3-idle uv \
     neovim git bat ripgrep zoxide tmux fish \
     gwenview kclock filelight kate kcalc kontact okular skanpage\
     distrobox chromium
@@ -50,4 +50,5 @@ dnf5 install -y codium
 
 flatpak preinstall -y
 
-dracut --force
+# Regenerate initramfs with Plymouth support
+dracut -f --add-drivers "i915" --add-drivers "nouveau" --add-drivers "amdgpu"
