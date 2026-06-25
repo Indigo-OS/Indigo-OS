@@ -27,23 +27,4 @@ cp -avf "/ctx/system_files"/. /
 systemctl enable podman.socket
 
 # INFO: Universe_lord's modifications
-
-dnf5 install -y fish tmux python3 python3-pip python3-devel neovim git bat ripgrep zoxide distrobox chromium
-
-tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
-[gitlab.com_paulcarroty_vscodium_repo]
-name=gitlab.com_paulcarroty_vscodium_repo
-baseurl=https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
-metadata_expire=1h
-EOF
-
-dnf5 install -y codium
-
-flatpak preinstall -y
-
-# mkdir -p /etc/vscodium/policies/linux/
-# cp /ctx/vscodium-restrictions.json /etc/vscodium/policy.json
+/ctx/install.sh
