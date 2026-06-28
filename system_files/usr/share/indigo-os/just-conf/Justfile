@@ -1,0 +1,10 @@
+set allow-duplicate-recipes := true
+set ignore-comments := true
+
+_default:
+    #!/bin/bash
+    just -l
+    xdg-open("https://github.com/Indigo-OS/Indigo-Os/docs/Project_Docs/README.md")
+
+# Imports
+# 
