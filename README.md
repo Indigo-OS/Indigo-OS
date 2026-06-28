@@ -2,7 +2,11 @@
 Code name: *Indigofera tinctoria*\
 Indigo os is a linux distro which is made for school environments like Computer labs.
 
+![Screeshot](docs/assets/indigo-os-announcement-Desktop.jpg)
+
 Take a look at [Docs](docs/Project_Docs/README.md)
+
+> Download Indigo OS : [SourceForge](https://sourceforge.net/projects/indigo-os/)
 
 ### What makes Indigo OS Different from other distros:
 Indigo Linux has:
