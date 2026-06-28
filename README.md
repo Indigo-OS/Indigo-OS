@@ -1,5 +1,5 @@
 # Indigo-OS A Ublue based Linux Distro
-Code name: *Indigofera tinctoria*\
+Code name: *Indigofera Tinctoria*\
 Indigo os is a linux distro which is made for school environments like Computer labs.
 
 Take a look at [Docs](docs/Project_Docs/README.md)

@@ -3,6 +3,16 @@ FROM scratch AS ctx
 COPY build_files /
 COPY system_files /system_files
 
+# Define OS Release Metadata
+ENV IMAGE_PRETTY_NAME="Indigo OS"
+ENV IMAGE_NAME="Indigo-OS:latest"
+ENV HOME_URL="https://github.com/Indigo-OS/Indigo-OS"
+ENV DOCUMENTATION_URL="https://github.com/Indigo-OS/Indigo-OS/blob/main/docs/Project_Docs/README.md"
+ENV SUPPORT_URL="https://github.com/Indigo-OS/Indigo-OS/issues"
+ENV BUG_REPORT_URL="https://github.com/Indigo-OS/Indigo-OS/issues"
+ENV LOGO="fedora-logo-ico"
+ENV CODE_NAME="Indigofera Tinctoria*"
+
 # Base Image
 FROM ghcr.io/ublue-os/kinoite-main
 # FROM quay.io/fedora-ostree-desktops/kinoite:44

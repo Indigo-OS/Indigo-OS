@@ -27,4 +27,5 @@ cp -avf "/ctx/system_files"/. /
 systemctl enable podman.socket
 
 # INFO: Universe_lord's modifications
-/ctx/install.sh
+/ctx/base/install.sh
+/ctx/base/os-release.sh
